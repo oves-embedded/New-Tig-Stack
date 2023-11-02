@@ -305,16 +305,16 @@ cat > telegraf.conf <<EOL
   ## Multiple URLs can be specified for a single cluster, only ONE of the
   ## urls will be written to each interval.
   ##   ex: urls = ["https://us-west-2-1.aws.cloud2.influxdata.com"]
-  urls = ["http://${DOCKER_INFLUXDB_INIT_HOST}:${DOCKER_INFLUXDB_INIT_PORT}"]
+  urls = ["http://influxdb:8086"]
 
   ## Token for authentication.
-  token = "$DOCKER_INFLUXDB_INIT_ADMIN_TOKEN"
+  token = "72634f97852549cf138c59fe330001efb6d8d63004f069bb30c2955bb540e434"
 
   ## Organization is the name of the organization you wish to write to; must exist.
-  organization = "$DOCKER_INFLUXDB_INIT_ORG"
+  organization = "oves"
 
   ## Destination bucket to write into.
-  bucket = "$DOCKER_INFLUXDB_INIT_BUCKET"
+  bucket = "telegraf"
 
 EOL
 
