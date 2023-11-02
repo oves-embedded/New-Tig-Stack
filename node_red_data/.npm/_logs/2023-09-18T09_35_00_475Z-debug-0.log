@@ -1,0 +1,268 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.19.4
+2 info using node@v16.20.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 3ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 0ms
+11 timing config:load:project Completed in 12ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 0ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 2ms
+15 timing config:load:global Completed in 2ms
+16 timing config:load:validate Completed in 0ms
+17 timing config:load:credentials Completed in 1ms
+18 timing config:load:setEnvs Completed in 2ms
+19 timing config:load Completed in 25ms
+20 timing npm:load:configload Completed in 25ms
+21 timing npm:load:mkdirpcache Completed in 6ms
+22 timing npm:load:mkdirplogs Completed in 8ms
+23 verbose title npm install node-red-contrib-socketio-agent@0.2.0
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-contrib-socketio-agent@0.2.0"
+25 timing npm:load:setTitle Completed in 4ms
+26 timing config:load:flatten Completed in 4ms
+27 timing npm:load:display Completed in 6ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-09-18T09_35_00_475Z-debug-0.log
+30 timing npm:load:logFile Completed in 34ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 0ms
+33 timing npm:load Completed in 86ms
+34 timing arborist:ctor Completed in 1ms
+35 silly logfile done cleaning log files
+36 timing arborist:ctor Completed in 1ms
+37 timing idealTree:init Completed in 44ms
+38 timing idealTree:userRequests Completed in 6ms
+39 silly idealTree buildDeps
+40 silly fetch manifest node-red-contrib-socketio-agent@0.2.0
+41 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-socketio-agent 1790ms (cache miss)
+42 silly placeDep ROOT node-red-contrib-socketio-agent@0.2.0 OK for: node-red-project@0.0.1 want: 0.2.0
+43 silly fetch manifest socket.io-client@^2.3.0
+44 http fetch GET 200 https://registry.npmjs.org/socket.io-client 254ms (cache miss)
+45 timing idealTree:#root Completed in 2076ms
+46 silly placeDep ROOT socket.io-client@2.5.0 OK for: node-red-contrib-socketio-agent@0.2.0 want: ^2.3.0
+47 silly fetch manifest backo2@1.0.2
+48 silly fetch manifest component-bind@1.0.0
+49 silly fetch manifest component-emitter@~1.3.0
+50 silly fetch manifest debug@~3.1.0
+51 silly fetch manifest engine.io-client@~3.5.0
+52 silly fetch manifest has-binary2@~1.0.2
+53 silly fetch manifest indexof@0.0.1
+54 silly fetch manifest parseqs@0.0.6
+55 silly fetch manifest parseuri@0.0.6
+56 silly fetch manifest socket.io-parser@~3.3.0
+57 silly fetch manifest to-array@0.1.4
+58 http fetch GET 200 https://registry.npmjs.org/socket.io-parser 310ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/debug 371ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/backo2 1627ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/component-emitter 1627ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/to-array 1629ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/parseuri 1637ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/indexof 1641ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/component-bind 1653ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/parseqs 1649ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/engine.io-client 1731ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/has-binary2 1761ms (cache miss)
+69 timing idealTree:node_modules/node-red-contrib-socketio-agent Completed in 1781ms
+70 silly placeDep ROOT backo2@1.0.2 OK for: socket.io-client@2.5.0 want: 1.0.2
+71 silly placeDep ROOT component-bind@1.0.0 OK for: socket.io-client@2.5.0 want: 1.0.0
+72 silly placeDep ROOT component-emitter@1.3.0 OK for: socket.io-client@2.5.0 want: ~1.3.0
+73 silly placeDep ROOT debug@3.1.0 OK for: socket.io-client@2.5.0 want: ~3.1.0
+74 silly placeDep ROOT engine.io-client@3.5.3 OK for: socket.io-client@2.5.0 want: ~3.5.0
+75 silly placeDep ROOT has-binary2@1.0.3 OK for: socket.io-client@2.5.0 want: ~1.0.2
+76 silly placeDep ROOT indexof@0.0.1 OK for: socket.io-client@2.5.0 want: 0.0.1
+77 silly placeDep ROOT parseqs@0.0.6 OK for: socket.io-client@2.5.0 want: 0.0.6
+78 silly placeDep ROOT parseuri@0.0.6 OK for: socket.io-client@2.5.0 want: 0.0.6
+79 silly placeDep ROOT socket.io-parser@3.3.3 OK for: socket.io-client@2.5.0 want: ~3.3.0
+80 silly placeDep ROOT to-array@0.1.4 OK for: socket.io-client@2.5.0 want: 0.1.4
+81 silly fetch manifest ms@2.0.0
+82 silly fetch manifest component-inherit@0.0.3
+83 silly fetch manifest engine.io-parser@~2.2.0
+84 silly fetch manifest has-cors@1.1.0
+85 silly fetch manifest ws@~7.4.2
+86 silly fetch manifest xmlhttprequest-ssl@~1.6.2
+87 silly fetch manifest yeast@0.1.2
+88 silly fetch manifest isarray@2.0.1
+89 http fetch GET 200 https://registry.npmjs.org/isarray 164ms (cache miss)
+90 http fetch GET 200 https://registry.npmjs.org/engine.io-parser 173ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/ms 202ms (cache miss)
+92 http fetch GET 200 https://registry.npmjs.org/ws 203ms (cache miss)
+93 http fetch GET 200 https://registry.npmjs.org/yeast 557ms (cache miss)
+94 http fetch GET 200 https://registry.npmjs.org/has-cors 1529ms (cache miss)
+95 http fetch GET 200 https://registry.npmjs.org/component-inherit 1570ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/xmlhttprequest-ssl 1568ms (cache miss)
+97 timing idealTree:node_modules/socket.io-client Completed in 1618ms
+98 timing idealTree:node_modules/backo2 Completed in 0ms
+99 timing idealTree:node_modules/component-bind Completed in 0ms
+100 timing idealTree:node_modules/component-emitter Completed in 0ms
+101 silly placeDep ROOT ms@2.0.0 OK for: debug@3.1.0 want: 2.0.0
+102 timing idealTree:node_modules/debug Completed in 4ms
+103 silly fetch manifest bufferutil@^4.0.1
+104 http fetch GET 200 https://registry.npmjs.org/bufferutil 208ms (cache miss)
+105 silly fetch manifest utf-8-validate@^5.0.2
+106 http fetch GET 200 https://registry.npmjs.org/utf-8-validate 200ms (cache miss)
+107 silly placeDep ROOT component-inherit@0.0.3 OK for: engine.io-client@3.5.3 want: 0.0.3
+108 silly placeDep ROOT engine.io-parser@2.2.1 OK for: engine.io-client@3.5.3 want: ~2.2.0
+109 silly placeDep ROOT has-cors@1.1.0 OK for: engine.io-client@3.5.3 want: 1.1.0
+110 silly placeDep ROOT ws@7.4.6 OK for: engine.io-client@3.5.3 want: ~7.4.2
+111 silly placeDep ROOT xmlhttprequest-ssl@1.6.3 OK for: engine.io-client@3.5.3 want: ~1.6.2
+112 silly placeDep ROOT yeast@0.1.2 OK for: engine.io-client@3.5.3 want: 0.1.2
+113 silly fetch manifest after@0.8.2
+114 silly fetch manifest arraybuffer.slice@~0.0.7
+115 silly fetch manifest base64-arraybuffer@0.1.4
+116 silly fetch manifest blob@0.0.5
+117 http fetch GET 200 https://registry.npmjs.org/arraybuffer.slice 1509ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/after 1515ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/blob 1562ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/base64-arraybuffer 1814ms (cache miss)
+121 timing idealTree:node_modules/engine.io-client Completed in 2265ms
+122 timing idealTree:node_modules/component-inherit Completed in 0ms
+123 silly placeDep ROOT after@0.8.2 OK for: engine.io-parser@2.2.1 want: 0.8.2
+124 silly placeDep ROOT arraybuffer.slice@0.0.7 OK for: engine.io-parser@2.2.1 want: ~0.0.7
+125 silly placeDep ROOT base64-arraybuffer@0.1.4 OK for: engine.io-parser@2.2.1 want: 0.1.4
+126 silly placeDep ROOT blob@0.0.5 OK for: engine.io-parser@2.2.1 want: 0.0.5
+127 timing idealTree:node_modules/engine.io-parser Completed in 15ms
+128 timing idealTree:node_modules/after Completed in 0ms
+129 timing idealTree:node_modules/arraybuffer.slice Completed in 0ms
+130 timing idealTree:node_modules/base64-arraybuffer Completed in 0ms
+131 timing idealTree:node_modules/blob Completed in 0ms
+132 silly placeDep ROOT isarray@2.0.1 OK for: has-binary2@1.0.3 want: 2.0.1
+133 timing idealTree:node_modules/has-binary2 Completed in 4ms
+134 timing idealTree:node_modules/has-cors Completed in 0ms
+135 timing idealTree:node_modules/indexof Completed in 0ms
+136 timing idealTree:node_modules/isarray Completed in 0ms
+137 timing idealTree:node_modules/ms Completed in 0ms
+138 timing idealTree:node_modules/parseqs Completed in 0ms
+139 timing idealTree:node_modules/parseuri Completed in 0ms
+140 timing idealTree:node_modules/socket.io-parser Completed in 0ms
+141 timing idealTree:node_modules/to-array Completed in 0ms
+142 timing idealTree:node_modules/ws Completed in 0ms
+143 timing idealTree:node_modules/xmlhttprequest-ssl Completed in 0ms
+144 timing idealTree:node_modules/yeast Completed in 0ms
+145 timing idealTree:buildDeps Completed in 7788ms
+146 timing idealTree:fixDepFlags Completed in 1ms
+147 timing idealTree Completed in 7843ms
+148 timing reify:loadTrees Completed in 7846ms
+149 timing reify:diffTrees Completed in 3ms
+150 silly reify moves {}
+151 timing reify:retireShallow Completed in 5ms
+152 timing reify:createSparse Completed in 59ms
+153 timing reify:trashOmits Completed in 0ms
+154 timing reify:loadBundles Completed in 0ms
+155 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-2.0.1.tgz. Extracting by manifest.
+156 silly tarball no local data for arraybuffer.slice@https://registry.npmjs.org/arraybuffer.slice/-/arraybuffer.slice-0.0.7.tgz. Extracting by manifest.
+157 silly tarball no local data for base64-arraybuffer@https://registry.npmjs.org/base64-arraybuffer/-/base64-arraybuffer-0.1.4.tgz. Extracting by manifest.
+158 silly tarball no local data for after@https://registry.npmjs.org/after/-/after-0.8.2.tgz. Extracting by manifest.
+159 silly tarball no local data for blob@https://registry.npmjs.org/blob/-/blob-0.0.5.tgz. Extracting by manifest.
+160 silly tarball no local data for yeast@https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz. Extracting by manifest.
+161 silly tarball no local data for has-cors@https://registry.npmjs.org/has-cors/-/has-cors-1.1.0.tgz. Extracting by manifest.
+162 silly tarball no local data for xmlhttprequest-ssl@https://registry.npmjs.org/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.6.3.tgz. Extracting by manifest.
+163 silly tarball no local data for engine.io-parser@https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-2.2.1.tgz. Extracting by manifest.
+164 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.0.0.tgz. Extracting by manifest.
+165 silly tarball no local data for socket.io-parser@https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-3.3.3.tgz. Extracting by manifest.
+166 silly tarball no local data for to-array@https://registry.npmjs.org/to-array/-/to-array-0.1.4.tgz. Extracting by manifest.
+167 silly tarball no local data for parseuri@https://registry.npmjs.org/parseuri/-/parseuri-0.0.6.tgz. Extracting by manifest.
+168 silly tarball no local data for ws@https://registry.npmjs.org/ws/-/ws-7.4.6.tgz. Extracting by manifest.
+169 silly tarball no local data for parseqs@https://registry.npmjs.org/parseqs/-/parseqs-0.0.6.tgz. Extracting by manifest.
+170 silly tarball no local data for component-inherit@https://registry.npmjs.org/component-inherit/-/component-inherit-0.0.3.tgz. Extracting by manifest.
+171 silly tarball no local data for has-binary2@https://registry.npmjs.org/has-binary2/-/has-binary2-1.0.3.tgz. Extracting by manifest.
+172 silly tarball no local data for indexof@https://registry.npmjs.org/indexof/-/indexof-0.0.1.tgz. Extracting by manifest.
+173 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-3.1.0.tgz. Extracting by manifest.
+174 silly tarball no local data for engine.io-client@https://registry.npmjs.org/engine.io-client/-/engine.io-client-3.5.3.tgz. Extracting by manifest.
+175 silly tarball no local data for backo2@https://registry.npmjs.org/backo2/-/backo2-1.0.2.tgz. Extracting by manifest.
+176 silly tarball no local data for component-bind@https://registry.npmjs.org/component-bind/-/component-bind-1.0.0.tgz. Extracting by manifest.
+177 silly tarball no local data for component-emitter@https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.0.tgz. Extracting by manifest.
+178 silly tarball no local data for node-red-contrib-socketio-agent@https://registry.npmjs.org/node-red-contrib-socketio-agent/-/node-red-contrib-socketio-agent-0.2.0.tgz. Extracting by manifest.
+179 silly tarball no local data for socket.io-client@https://registry.npmjs.org/socket.io-client/-/socket.io-client-2.5.0.tgz. Extracting by manifest.
+180 http fetch GET 200 https://registry.npmjs.org/after/-/after-0.8.2.tgz 1160ms (cache miss)
+181 timing reifyNode:node_modules/after Completed in 1262ms
+182 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-2.0.1.tgz 1182ms (cache miss)
+183 timing reifyNode:node_modules/isarray Completed in 1280ms
+184 http fetch GET 200 https://registry.npmjs.org/base64-arraybuffer/-/base64-arraybuffer-0.1.4.tgz 1219ms (cache miss)
+185 timing reifyNode:node_modules/base64-arraybuffer Completed in 1318ms
+186 http fetch GET 200 https://registry.npmjs.org/component-inherit/-/component-inherit-0.0.3.tgz 1237ms (cache miss)
+187 timing reifyNode:node_modules/component-inherit Completed in 1367ms
+188 http fetch GET 200 https://registry.npmjs.org/arraybuffer.slice/-/arraybuffer.slice-0.0.7.tgz 1278ms (cache miss)
+189 timing reifyNode:node_modules/arraybuffer.slice Completed in 1376ms
+190 http fetch GET 200 https://registry.npmjs.org/has-cors/-/has-cors-1.1.0.tgz 1273ms (cache miss)
+191 timing reifyNode:node_modules/has-cors Completed in 1379ms
+192 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 1281ms (cache miss)
+193 timing reifyNode:node_modules/ms Completed in 1396ms
+194 http fetch GET 200 https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.0.tgz 1250ms (cache miss)
+195 timing reifyNode:node_modules/component-emitter Completed in 1400ms
+196 http fetch GET 200 https://registry.npmjs.org/indexof/-/indexof-0.0.1.tgz 1278ms (cache miss)
+197 timing reifyNode:node_modules/indexof Completed in 1410ms
+198 http fetch GET 200 https://registry.npmjs.org/has-binary2/-/has-binary2-1.0.3.tgz 1287ms (cache miss)
+199 timing reifyNode:node_modules/has-binary2 Completed in 1417ms
+200 http fetch GET 200 https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-3.3.3.tgz 1304ms (cache miss)
+201 timing reifyNode:node_modules/socket.io-parser Completed in 1419ms
+202 http fetch GET 200 https://registry.npmjs.org/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.6.3.tgz 1319ms (cache miss)
+203 http fetch GET 200 https://registry.npmjs.org/backo2/-/backo2-1.0.2.tgz 1291ms (cache miss)
+204 timing reifyNode:node_modules/backo2 Completed in 1429ms
+205 timing reifyNode:node_modules/xmlhttprequest-ssl Completed in 1444ms
+206 http fetch GET 200 https://registry.npmjs.org/component-bind/-/component-bind-1.0.0.tgz 1306ms (cache miss)
+207 timing reifyNode:node_modules/component-bind Completed in 1447ms
+208 http fetch GET 200 https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz 1349ms (cache miss)
+209 timing reifyNode:node_modules/yeast Completed in 1454ms
+210 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-3.1.0.tgz 1321ms (cache miss)
+211 http fetch GET 200 https://registry.npmjs.org/blob/-/blob-0.0.5.tgz 1354ms (cache miss)
+212 timing reifyNode:node_modules/debug Completed in 1459ms
+213 http fetch GET 200 https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-2.2.1.tgz 1352ms (cache miss)
+214 timing reifyNode:node_modules/engine.io-parser Completed in 1463ms
+215 http fetch GET 200 https://registry.npmjs.org/parseqs/-/parseqs-0.0.6.tgz 1340ms (cache miss)
+216 timing reifyNode:node_modules/parseqs Completed in 1468ms
+217 http fetch GET 200 https://registry.npmjs.org/to-array/-/to-array-0.1.4.tgz 1354ms (cache miss)
+218 timing reifyNode:node_modules/to-array Completed in 1471ms
+219 timing reifyNode:node_modules/blob Completed in 1474ms
+220 http fetch GET 200 https://registry.npmjs.org/parseuri/-/parseuri-0.0.6.tgz 1359ms (cache miss)
+221 timing reifyNode:node_modules/parseuri Completed in 1478ms
+222 http fetch GET 200 https://registry.npmjs.org/engine.io-client/-/engine.io-client-3.5.3.tgz 1385ms (cache miss)
+223 timing reifyNode:node_modules/engine.io-client Completed in 1543ms
+224 http fetch GET 200 https://registry.npmjs.org/ws/-/ws-7.4.6.tgz 1719ms (cache miss)
+225 timing reifyNode:node_modules/ws Completed in 1841ms
+226 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-socketio-agent/-/node-red-contrib-socketio-agent-0.2.0.tgz 1780ms (cache miss)
+227 timing reifyNode:node_modules/node-red-contrib-socketio-agent Completed in 1943ms
+228 http fetch GET 200 https://registry.npmjs.org/socket.io-client/-/socket.io-client-2.5.0.tgz 1866ms (cache miss)
+229 timing reifyNode:node_modules/socket.io-client Completed in 2041ms
+230 timing reify:unpack Completed in 2044ms
+231 timing reify:unretire Completed in 1ms
+232 timing build:queue Completed in 11ms
+233 timing build:deps Completed in 13ms
+234 timing build Completed in 13ms
+235 timing reify:build Completed in 15ms
+236 timing reify:trash Completed in 0ms
+237 timing reify:save Completed in 31ms
+238 timing reify Completed in 10034ms
+239 silly ADD node_modules/isarray
+240 silly ADD node_modules/blob
+241 silly ADD node_modules/base64-arraybuffer
+242 silly ADD node_modules/arraybuffer.slice
+243 silly ADD node_modules/after
+244 silly ADD node_modules/yeast
+245 silly ADD node_modules/xmlhttprequest-ssl
+246 silly ADD node_modules/ws
+247 silly ADD node_modules/has-cors
+248 silly ADD node_modules/engine.io-parser
+249 silly ADD node_modules/component-inherit
+250 silly ADD node_modules/ms
+251 silly ADD node_modules/to-array
+252 silly ADD node_modules/socket.io-parser
+253 silly ADD node_modules/parseuri
+254 silly ADD node_modules/parseqs
+255 silly ADD node_modules/indexof
+256 silly ADD node_modules/has-binary2
+257 silly ADD node_modules/engine.io-client
+258 silly ADD node_modules/debug
+259 silly ADD node_modules/component-emitter
+260 silly ADD node_modules/component-bind
+261 silly ADD node_modules/backo2
+262 silly ADD node_modules/socket.io-client
+263 silly ADD node_modules/node-red-contrib-socketio-agent
+264 timing command:install Completed in 10053ms
+265 verbose exit 0
+266 timing npm Completed in 10454ms
+267 info ok

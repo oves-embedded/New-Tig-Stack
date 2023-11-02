@@ -1,0 +1,45 @@
+version: '3.7'
+services:
+  ##### INFLUXDB
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    ports:
+      - 8086:8086
+      # Mount for influxdb data directory and configuration
+    volumes:
+      - ./data/influxdb:/var/lib/influxdb
+    env_file:
+      - .env
+    entrypoint: ["./entrypoint.sh"]
+
+  ##### TELEGRAF
+  telegraf:
+    image: telegraf:1.27
+    container_name: telegraf
+    depends_on:
+      - influxdb
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf
+    env_file:
+      - .env
+
+  ##### GRAFANA
+  grafana:
+    image: grafana/grafana-oss:10.0.2
+    container_name: grafana
+    ports:
+      - 3000:3000
+    depends_on:
+      - influxdb
+    volumes:
+      - ./data/grafana/grafana:/var/lib/grafana
+
+  ##### NODE-RED
+  node-red:
+    image: nodered/node-red:latest
+    container_name: node-red
+    volumes:
+      - './node_red_data:/data'
+    ports:
+      - 1880:1880

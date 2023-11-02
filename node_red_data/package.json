@@ -1,0 +1,11 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@ridort/node-red-contrib-socketio-simple": "~0.2.0",
+        "node-red-contrib-socketio-agent": "~0.2.0",
+        "node-red-contrib-socketio-server": "~0.1.5"
+    }
+}

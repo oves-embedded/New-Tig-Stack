@@ -1,0 +1,121 @@
+{
+ "_att": {
+  "_meta": "Attributes are immutable once set, typically at factory",
+  "_opid": "OEM Device ID. Factory set.",
+  "_ppid": "PAYG Device ID. Factory set. Field override options.",
+  "_flid": "Fleet ID. Factory set. Field override options.",
+  "_frmV": "Firmware Version. Factory set."
+ },
+ "att" : {
+  "opid" : "12AH20000001",
+  "ppid" : "12AH20000001",
+  "flid" : "60b032fa3711d64a5c6c22a7",
+  "frmV" : "1.0"
+},
+"cmd" : {
+  "pubk" : "*042 195 826 493 279 052 222#", 
+  "gstw" : 480,
+  "gctw" : 10,
+  "raml" : ["plat", "plon", "pckc"],
+  "ramt" : 10,
+  "alml" : ["pckc", "batp"],
+  "napn" : "t-mobile,xxxxxxx",
+  "swch" : "On",
+  "read" : "<data>",
+  "rptm" : "<Rpt mode>",
+  "hbfq" : 60
+},
+ "_cmd": {
+  "_meta": "Commands are values writed by external client.  Also readable",
+  "_pubk": "Public Key / Last Code",
+  "_gstw": "GPRS Sleep Time Window in mins",
+  "_gctw": "GPRS Connect Time Window in mins",
+  "_raml": "Rapid Auto Message List",
+  "_ramt": "Rapid Auto Message Time in Second",
+  "_alml": "Abacus Ledger Message List",
+  "_napn": "GPRS Carrier APN Name and Passcode",
+  "_swch": "Generic device switch swch = ON | OFF ",
+  "_read": "Last read request of ANY GATT <data> = [opid|...|]",
+  "_rptm": "Set notification request <mode> = [0|1|2|3|4], 0: Auto-Periodic | 1 = Request-Response | 2 = Change-Notification",
+  "_hbfq": "Heart Beat Interval Minutes"
+ },
+ "_sts": {
+   "_meta": "States are discrete state variables.  All Omnivoltaic devices share common state set. Read only",
+   "_sstc": "System Status Code",
+   "_crtm": "created at time",
+   "_udtm": "update at time",
+   "_time": "Device internal timer readout at last communication",
+   "_plat": "Device GPS Latitude",
+   "_plon": "Device GPS Longitude",
+   "_gpss": "GPS Signal Strength in db",
+   "_gpfc": "GPRS Connect Failure Counts",
+   "_rcrd": "Remaining Credit Days",
+   "_trhd": "Total Running History Days",
+   "_tpgd": "PAYG Running Days",
+   "_pgst": "PAYG State = PAYG | FREE",
+   "_tkre": "Last token entry response = NEW | REPEAT | ERROR",
+   "_ocst": "Device Output State = ENABLED | DISABLED"
+  },
+  "sts" : { 
+     "sstc" : 1,
+     "crtm" : 202100010001,
+     "udtm" : 202100010002,
+     "time" : 202100010003,
+     "plat" : 37.177,
+     "plon" : -121.7549,
+     "gpss" : 4,
+     "gpfc" : 100,
+     "rcrd" : 1,
+     "trhd" : 1,
+     "tpgd" : 1,
+     "pgst" : "PAYG",
+     "tkre" : "NEW",
+     "ocst" : "ENABLED"
+   },
+ "_dta": {
+  "_meta": "Camp specific data available for clients. Read only",
+  "_batp": "Battery Net Charging Power W",
+  "_inpp": "Total Input Power W",
+  "_outp": "Output Power W,",
+  "_aeng": "Accumulated Energy Output in Whs",
+  "_pckv": "Pack Voltage mV",
+  "_pckc": "Pack Current in mA",
+  "_rsoc": "Relative State of Charge",
+  "_rcap": "Remaining Capacity in Whs",
+  "_fccp": "Full Charge Capacity in Whs",
+  "_pckt": "Pack Temperature in Celsius",
+  "_acyc": "Accumulated Cycles"
+ },
+ "dta" : { 
+		"batp" : 10,
+		"inpp" : 50,
+		"outp" : 40,
+		"aeng" : 3177,
+		"pckv" : 13000,
+		"pckc" : 10,
+		"rsoc" : 50,
+		"rcap" : 3568,
+		"fccp" : 17904,
+		"pckt" : 25,
+		"acyc" : 13
+	},
+ "_dia": {
+  "_meta": "Oasis-1K specific diagnostics available service personnel. Read only",
+  "_cv01": "Cell 01 Voltage mV",
+  "_cv02": "Cell 02 Voltage mV",
+  "_cv03": "Cell 03 Voltage mV",
+  "_cv04": "Cell 04 Voltage mV",
+  "_cv05": "Cell 05 Voltage mV",
+  "_cv06": "Cell 06 Voltage mV",
+  "_cv07": "Cell 07 Voltage mV"
+ },
+ "dia" : { 
+		"cv01" : 3189,
+		"cv02" : 3189,
+		"cv03" : 3189,
+		"cv04" : 3189,
+		"cv05" : 3189,
+		"cv06" : 3189,
+		"cv07" : 3189
+	}
+}
