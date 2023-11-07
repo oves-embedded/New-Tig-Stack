@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "ef6e1a8cac1f19cb",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f5d335cee05e155f",
         "type": "socketio-config",
         "uri": "wss://mqtt-parser.omnivoltaic.com",
@@ -69,6 +77,37 @@
         "closeMsg": {},
         "willTopic": "",
         "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d4bc9b947947af0d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt-2.omnivoltaic.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
         "willPayload": "",
         "willMsg": {},
         "userProps": "",
@@ -271,9 +310,7 @@
         "x": 170,
         "y": 380,
         "wires": [
-            [
-                "bde5ac217bb0fab2"
-            ]
+            []
         ]
     },
     {
@@ -386,5 +423,88 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "90fca14d402559b3",
+        "type": "inject",
+        "z": "ef6e1a8cac1f19cb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "{\t    \"att\": {\t        \"opid\": \"48AH2207006090\",\t        \"ppid\": \"48AH2207006090<<<<<<\",\t        \"flid\": \"\",\t        \"frmv\": \"3.3.3\"\t    },\t    \"cmd\": {\t        \"pubk\": \"*013 220 698 041 684 871 144#\",\t        \"gstw\": 5,\t        \"gctw\": 2,\t        \"napn\": \"orange.m2m.spec\",\t        \"swch\": 0,\t        \"read\": 0,\t        \"rptm\": 0,\t        \"hbfq\": 1\t    },\t    \"sts\": {\t        \"sstc\": 256,\t        \"crtm\": \"\",\t        \"udtm\": \"\",\t        \"time\": \"\",\t        \"plat\": -1.676905,\t        \"plon\": 29.204065,\t        \"gpss\": 20,\t        \"gpfc\": 144,\t        \"rcrd\": 1096,\t        \"trhd\": 10+$floor($random()*1000),\t        \"tpgd\": 10+$floor($random()*1000),\t        \"pgst\": 1,\t        \"tkre\": 10+$floor($random()*1000),\t        \"ocst\": 1\t    },\t    \"dta\": {\t        \"batp\": 10+$floor($random()*1000),\t        \"inpp\": 10+$floor($random()*1000),\t        \"outp\": 10+$floor($random()*1000),\t        \"aeng\": 10+$floor($random()*1000),\t        \"pckv\": 10+$floor($random()*1000),\t        \"pckc\": 10+$floor($random()*1000),\t        \"rsoc\": 10+$floor($random()*1000),\t        \"rcap\": 10+$floor($random()*1000),\t        \"fccp\": 10+$floor($random()*1000),\t        \"pckt\": 10+$floor($random()*1000),\t        \"slon\": 1.345,\t        \"slat\": 1.909,\t        \"salt\": 0,\t        \"sstm\": \" \",\t        \"sgps\": 0,\t        \"sspe\": 0\t    },\t    \"dia\": {\t        \"cv01\": 10+$floor($random()*1000),\t        \"cv02\": 10+$floor($random()*1000),\t        \"cv03\": 10+$floor($random()*1000),\t        \"cv04\": 10+$floor($random()*1000),\t        \"cv05\": 10+$floor($random()*1000),\t        \"cv06\": 10+$floor($random()*1000),\t        \"cv07\": 10+$floor($random()*1000),\t        \"cv08\": 10+$floor($random()*1000),\t        \"cv09\": 10+$floor($random()*1000),\t        \"cv10\": 10+$floor($random()*1000),\t        \"cv11\": 10+$floor($random()*1000),\t        \"cv12\": 10+$floor($random()*1000),\t        \"cv13\": 10+$floor($random()*1000),\t        \"cv14\": 10+$floor($random()*1000),\t        \"cv15\": 10+$floor($random()*1000),\t        \"cv16\": 10+$floor($random()*1000),\t        \"cv17\": 10+$floor($random()*1000),\t        \"cv18\": 10+$floor($random()*1000),\t        \"cv19\": 10+$floor($random()*1000),\t        \"cv20\": 10+$floor($random()*1000)\t    }\t}",
+        "payloadType": "jsonata",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "c123c4a59d38a009"
+            ]
+        ]
+    },
+    {
+        "id": "c123c4a59d38a009",
+        "type": "mqtt out",
+        "z": "ef6e1a8cac1f19cb",
+        "name": "",
+        "topic": "dt/alex/test",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d4bc9b947947af0d",
+        "x": 510,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "eaa662aa7cb96b25",
+        "type": "inject",
+        "z": "ef6e1a8cac1f19cb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"alarmList\":[{\"id\":\"02301001\",\"alarmDesc\":\"03\",\"alarmFlag\":0,\"doorId\":\"11\",\"userId\":\"rtwertrtr\",\"batteryId\":\"BT2060020080FLT190728039\",\"alarmTime\":156700000000}],\"msgType\":410,\"devId\":\"ALEX1\",\"txnNo\":1567601515107}",
+        "payloadType": "str",
+        "x": 250,
+        "y": 420,
+        "wires": [
+            [
+                "66b909e9f59f86cb"
+            ]
+        ]
+    },
+    {
+        "id": "66b909e9f59f86cb",
+        "type": "tcp out",
+        "z": "ef6e1a8cac1f19cb",
+        "name": "",
+        "host": "18.194.209.3",
+        "port": "8081",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 620,
+        "y": 400,
+        "wires": []
     }
 ]
