@@ -43,3 +43,12 @@ services:
       - './node_red_data:/data'
     ports:
       - 1880:1880
+
+  ##### CHRONOGRAF
+  chronograf:
+    image: chronograf
+    ports:
+      - 8888:8888
+    command: ["chronograf", "--influxdb-url=http://influxdb:8086"]
+    links:
+      - "influxdb:influxdb"
